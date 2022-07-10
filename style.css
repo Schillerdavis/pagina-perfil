@@ -1,0 +1,124 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    --bg-color: white;
+    --text-color: black;
+    --primary-color: blueviolet;
+    --primary-dark-color: rgb(97, 20, 168);
+
+}
+.darkBlue {
+    --bg-color: rgb(1, 1, 95);
+    --text-color: white;
+    --primary-color: blueviolet;
+    --primary-dark-color: rgb(78, 11, 139);
+}
+.pink {
+    --bg-color: white;
+    --text-color: black;
+    --primary-color: rgb(226, 43, 171);
+    --primary-dark-color: rgb(139, 11, 111);
+}
+.darkPink {
+    --bg-color: rgb(41, 6, 6);
+    --text-color: white;
+    --primary-color: rgb(226, 43, 171);
+    --primary-dark-color: rgb(139, 11, 111);
+}
+.green {
+    --bg-color: white;
+    --text-color: black;
+    --primary-color: rgb(64, 226, 43);
+    --primary-dark-color: rgb(11, 139, 17);
+}
+.darkGreen {
+    --bg-color: rgb(6, 41, 15);
+    --text-color: white;
+    --primary-color: rgb(64, 226, 43);
+    --primary-dark-color: rgb(11, 139, 17);
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Roboto;
+}
+div.temas{
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+.container{
+    width: 300px;
+    text-align: center;
+    margin: 50px auto;
+}
+input.btntemas {
+    width: 45px;
+    height: 10px;
+    border: 1px solid white;
+}
+input.btntemas:hover {
+    transform: translate( 0px, 3px);
+}
+#btnpadrao {
+    background-color: blueviolet;
+}
+#btndark {
+    background-color: rgb(1, 1, 95);
+}
+#btnpink {
+    background-color: rgb(226, 43, 171);
+}
+#btndarkpink {
+    background-color: rgb(41, 6, 6);
+}
+#btngreen {
+    background-color: rgb(64, 226, 43);
+}
+#btndarkgreen {
+    background-color: rgb(6, 41, 15);
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    padding: 3.7px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.295);
+}
+h1 {
+    font-size: 35px;
+    margin: 28px 0 28px;
+}
+p {
+    font-family: Roboto Mono;
+    margin: 0px 0px 24px;
+}
+img:hover {
+    transform: translate(-6px, -6px);
+    box-shadow: 9px 9px 14px rgba(0, 0, 0, 0.363);
+}
+ul li a{
+    display:flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: var(--primary-dark-color);
+}
+
+li{
+    list-style: none;
+}
